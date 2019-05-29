@@ -8,6 +8,8 @@
 
 import UIKit
 
+//here is a comment
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
