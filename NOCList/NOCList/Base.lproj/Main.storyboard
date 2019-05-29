@@ -90,22 +90,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="9wT-j9-xil">
+                                <rect key="frame" x="300" y="220" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="099-04-AZv" eventType="valueChanged" id="UA3-2c-oja"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="i0U-13-jqt" firstAttribute="leading" secondItem="v37-So-pAZ" secondAttribute="leading" constant="20" id="4bT-qW-vvS"/>
                             <constraint firstItem="l2U-iX-qGX" firstAttribute="top" secondItem="i0U-13-jqt" secondAttribute="bottom" constant="10" id="BDz-AX-4y5"/>
+                            <constraint firstItem="v37-So-pAZ" firstAttribute="trailing" secondItem="9wT-j9-xil" secondAttribute="trailing" constant="20" id="N3t-U5-PVZ"/>
                             <constraint firstItem="8wZ-dM-Uqz" firstAttribute="top" secondItem="v37-So-pAZ" secondAttribute="top" constant="15" id="Q5x-at-pkz"/>
                             <constraint firstItem="v37-So-pAZ" firstAttribute="trailing" secondItem="8wZ-dM-Uqz" secondAttribute="trailing" constant="20" id="eUE-Kw-LEd"/>
                             <constraint firstItem="i0U-13-jqt" firstAttribute="top" secondItem="v37-So-pAZ" secondAttribute="top" constant="15" id="fzf-f1-kgH"/>
                             <constraint firstItem="gRo-jT-hZZ" firstAttribute="top" secondItem="8wZ-dM-Uqz" secondAttribute="bottom" constant="10" id="gN5-Xb-bZA"/>
                             <constraint firstItem="v37-So-pAZ" firstAttribute="trailing" secondItem="gRo-jT-hZZ" secondAttribute="trailing" constant="20" id="jBg-k9-YWx"/>
+                            <constraint firstItem="9wT-j9-xil" firstAttribute="top" secondItem="gRo-jT-hZZ" secondAttribute="bottom" constant="10" id="rIT-iX-P4K"/>
                             <constraint firstItem="l2U-iX-qGX" firstAttribute="leading" secondItem="v37-So-pAZ" secondAttribute="leading" constant="20" id="wU9-Y7-c7F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v37-So-pAZ"/>
                     </view>
                     <connections>
                         <outlet property="agentLevel" destination="gRo-jT-hZZ" id="rUp-Ea-cFM"/>
+                        <outlet property="agentStepper" destination="9wT-j9-xil" id="S2k-h9-pcH"/>
                         <outlet property="coverName" destination="i0U-13-jqt" id="J1y-gE-qHw"/>
                         <outlet property="realName" destination="l2U-iX-qGX" id="qVi-ly-Fd3"/>
                     </connections>

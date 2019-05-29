@@ -13,6 +13,8 @@ class AgentDetailViewController: UIViewController {
     @IBOutlet weak var coverName: UILabel!
     @IBOutlet weak var realName: UILabel!
     @IBOutlet weak var agentLevel: UILabel!
+    @IBOutlet weak var agentStepper: UIStepper!
+    
     
     var agent: (coverName: String, realName: String, accessLevel: Int, compromised: Bool)!
     
@@ -22,20 +24,28 @@ class AgentDetailViewController: UIViewController {
         coverName.text = agent.coverName
         realName.text = agent.realName
         agentLevel.text = "\(agent.accessLevel)"
-        if agent.compromised == true {
-            view.backgroundColor = UIColor(hue: 0, saturation: 0.4, brightness: 0.9, alpha: 1.0)
+       
+        
+        agentStepper.isContinuous = false
+        agentStepper.autorepeat = true
+        agentStepper.wraps = false
+        agentStepper.maximumValue = 10
+        agentStepper.value = Double(Int(agent.accessLevel))
+        agentStepper.tintColor = .blue
+        
+
         }
-    }
+    
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        
+        agentLevel.text = String(Int(agentStepper.value))
+        if agentStepper.value >= 5 {
+            view.backgroundColor = UIColor(hue: 0, saturation: 0.4, brightness: 0.9, alpha: 1.0)
+        } else {view.backgroundColor = .white}
     }
-    */
+   
 
+    
 }
