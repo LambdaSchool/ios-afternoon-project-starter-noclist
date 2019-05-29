@@ -25,6 +25,7 @@ class AgentDetailViewController: UIViewController {
         realName.text = agent.realName
         agentLevel.text = "\(agent.accessLevel)"
        
+        //UIStepper Configurations
         
         agentStepper.isContinuous = false
         agentStepper.autorepeat = true
@@ -36,7 +37,7 @@ class AgentDetailViewController: UIViewController {
 
         }
     
-    
+    //If the stepper value is changed to less than 5, the background will become white. If it is more than 5, it will become red.
 
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         
