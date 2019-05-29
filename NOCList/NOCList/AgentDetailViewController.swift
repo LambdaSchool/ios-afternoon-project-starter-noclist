@@ -24,6 +24,10 @@ class AgentDetailViewController: UIViewController {
         coverName.text = agent.coverName
         realName.text = agent.realName
         agentLevel.text = "\(agent.accessLevel)"
+        
+        if agent.compromised == true {
+            view.backgroundColor = UIColor(hue: 0, saturation: 0.4, brightness: 0.9, alpha: 1.0)
+        } else {view.backgroundColor = .white}
        
         //UIStepper Configurations
         
@@ -31,7 +35,7 @@ class AgentDetailViewController: UIViewController {
         agentStepper.autorepeat = true
         agentStepper.wraps = false
         agentStepper.maximumValue = 10
-        agentStepper.value = Double(Int(agent.accessLevel))
+        agentStepper.value = Double(agent.accessLevel)
         agentStepper.tintColor = .blue
         
 
