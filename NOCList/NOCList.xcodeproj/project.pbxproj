@@ -12,6 +12,7 @@
 		CEC31CCF229759CC007F6F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CCE229759CC007F6F4A /* Assets.xcassets */; };
 		CEC31CD2229759CC007F6F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CD0229759CC007F6F4A /* LaunchScreen.storyboard */; };
 		CEC31CDA229759FA007F6F4A /* NOCListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */; };
+		DEA0541522D3DBBD00D7111D /* AgentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA0541422D3DBBD00D7111D /* AgentDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CEC31CD1229759CC007F6F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC31CD3229759CC007F6F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NOCListTableViewController.swift; sourceTree = "<group>"; };
+		DEA0541422D3DBBD00D7111D /* AgentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				CEC31CC7229759CC007F6F4A /* AppDelegate.swift */,
 				CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */,
+				DEA0541422D3DBBD00D7111D /* AgentDetailViewController.swift */,
 				CEC31CCB229759CC007F6F4A /* Main.storyboard */,
 				CEC31CCE229759CC007F6F4A /* Assets.xcassets */,
 				CEC31CD0229759CC007F6F4A /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC31CC8229759CC007F6F4A /* AppDelegate.swift in Sources */,
+				DEA0541522D3DBBD00D7111D /* AgentDetailViewController.swift in Sources */,
 				CEC31CDA229759FA007F6F4A /* NOCListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
