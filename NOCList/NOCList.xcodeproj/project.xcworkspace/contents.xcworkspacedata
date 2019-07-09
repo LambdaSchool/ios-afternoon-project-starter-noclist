@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NOCList.xcodeproj">
+      location = "group:/Users/santana/Desktop/Lambda/Unit1/ios-afternoon-project-starter-noclist/NOCList/NOCList/Main.storyboard">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

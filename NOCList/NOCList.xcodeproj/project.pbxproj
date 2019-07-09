@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5C71E1A22D418B60026FABC /* AgentDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C71E1822D418B60026FABC /* AgentDetailsVC.swift */; };
+		B5C71E1B22D418B60026FABC /* NOCListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C71E1922D418B60026FABC /* NOCListCell.swift */; };
+		B5C71E1D22D419900026FABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C71E1C22D418F50026FABC /* Main.storyboard */; };
 		CEC31CC8229759CC007F6F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC31CC7229759CC007F6F4A /* AppDelegate.swift */; };
-		CEC31CCD229759CC007F6F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CCB229759CC007F6F4A /* Main.storyboard */; };
 		CEC31CCF229759CC007F6F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CCE229759CC007F6F4A /* Assets.xcassets */; };
 		CEC31CD2229759CC007F6F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CD0229759CC007F6F4A /* LaunchScreen.storyboard */; };
 		CEC31CDA229759FA007F6F4A /* NOCListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5C71E1822D418B60026FABC /* AgentDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentDetailsVC.swift; sourceTree = "<group>"; };
+		B5C71E1922D418B60026FABC /* NOCListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NOCListCell.swift; sourceTree = "<group>"; };
+		B5C71E1C22D418F50026FABC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "/Users/santana/Desktop/Lambda/Unit1/ios-afternoon-project-starter-noclist/NOCList/NOCList/Main.storyboard"; sourceTree = "<absolute>"; };
 		CEC31CC4229759CC007F6F4A /* NOCList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOCList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC31CC7229759CC007F6F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEC31CCC229759CC007F6F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEC31CCE229759CC007F6F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC31CD1229759CC007F6F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC31CD3229759CC007F6F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,9 +58,11 @@
 		CEC31CC6229759CC007F6F4A /* NOCList */ = {
 			isa = PBXGroup;
 			children = (
+				B5C71E1822D418B60026FABC /* AgentDetailsVC.swift */,
+				B5C71E1922D418B60026FABC /* NOCListCell.swift */,
 				CEC31CC7229759CC007F6F4A /* AppDelegate.swift */,
+				B5C71E1C22D418F50026FABC /* Main.storyboard */,
 				CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */,
-				CEC31CCB229759CC007F6F4A /* Main.storyboard */,
 				CEC31CCE229759CC007F6F4A /* Assets.xcassets */,
 				CEC31CD0229759CC007F6F4A /* LaunchScreen.storyboard */,
 				CEC31CD3229759CC007F6F4A /* Info.plist */,
@@ -122,9 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C71E1D22D419900026FABC /* Main.storyboard in Resources */,
 				CEC31CD2229759CC007F6F4A /* LaunchScreen.storyboard in Resources */,
 				CEC31CCF229759CC007F6F4A /* Assets.xcassets in Resources */,
-				CEC31CCD229759CC007F6F4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C71E1B22D418B60026FABC /* NOCListCell.swift in Sources */,
 				CEC31CC8229759CC007F6F4A /* AppDelegate.swift in Sources */,
+				B5C71E1A22D418B60026FABC /* AgentDetailsVC.swift in Sources */,
 				CEC31CDA229759FA007F6F4A /* NOCListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEC31CCB229759CC007F6F4A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEC31CCC229759CC007F6F4A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEC31CD0229759CC007F6F4A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
