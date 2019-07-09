@@ -10,10 +10,22 @@ import UIKit
 
 class AgentDetailViewController: UIViewController {
 
+    @IBOutlet weak var agentNameLabel: UILabel!
+    
+    @IBOutlet weak var agentStatusLabel: UILabel!
+    
+    @IBOutlet weak var agentAccessLevelLabel: UILabel!
+    
+    var agent: (coverName:String, realName:String, accessLevel:Int, compromised:Bool)!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = agent.coverName
+        agentNameLabel.text = agent.realName
+        agentAccessLevelLabel.text = "\(agent.accessLevel)"
+        agentStatusLabel.text = "\(agent.compromised)"
     }
     
 

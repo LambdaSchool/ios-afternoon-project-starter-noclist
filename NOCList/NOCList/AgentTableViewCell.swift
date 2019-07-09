@@ -10,6 +10,13 @@ import UIKit
 
 class AgentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var agentCoverNameLabel: UILabel!
+    
+ @IBOutlet weak var agentAccessLevelLabel: UILabel!
+    
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
