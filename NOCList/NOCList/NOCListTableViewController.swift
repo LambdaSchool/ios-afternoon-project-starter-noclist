@@ -26,8 +26,9 @@ class NOCListTableViewController: UITableViewController
         return agents.count
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AgentInformation", for: indexPath) as? AgentTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "agent", for: indexPath) as? AgentTableViewCell else { return UITableViewCell() }
         let agent = agents[indexPath.row]
         cell.agentCoverNameLabel.text = agent.coverName
         cell.agentAccessLevelLabel.text = "Access Level: \(agent.accessLevel)"
@@ -41,6 +42,7 @@ class NOCListTableViewController: UITableViewController
         return cell
     }
     
+    /// displays the 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Number of agents Compromised: \(agentsCompromised())"
     }
@@ -81,12 +83,13 @@ class NOCListTableViewController: UITableViewController
                   agentEleven]
 
     }
+    
+    
+    
+    /// calculates the number of agents that are compromised.
     func agentsCompromised() -> Int {
-        
         var count = 0
-        
         for agent in agents {
-            
             if agent.compromised == true {
                 count += 1
             }

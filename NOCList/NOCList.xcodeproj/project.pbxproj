@@ -60,9 +60,9 @@
 			children = (
 				CEC31CC7229759CC007F6F4A /* AppDelegate.swift */,
 				CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */,
+				DD5228FB22D3DB8300337A08 /* AgentDetailViewController.swift */,
 				DD5228F922D3D5F300337A08 /* AgentTableViewCell.swift */,
 				CEC31CCB229759CC007F6F4A /* Main.storyboard */,
-				DD5228FB22D3DB8300337A08 /* AgentDetailViewController.swift */,
 				CEC31CCE229759CC007F6F4A /* Assets.xcassets */,
 				CEC31CD0229759CC007F6F4A /* LaunchScreen.storyboard */,
 				CEC31CD3229759CC007F6F4A /* Info.plist */,
