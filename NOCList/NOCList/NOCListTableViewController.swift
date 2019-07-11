@@ -16,6 +16,8 @@ class NOCListTableViewController: UITableViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Hi Victor")
+        
     }
     
     // MARK: - Table view data source
