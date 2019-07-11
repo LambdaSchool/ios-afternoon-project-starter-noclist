@@ -8,6 +8,8 @@
 
 import UIKit
 
+private var agents: [(coverName: String, realName: String, accessLevel: Int, compromised: Bool)]
+
 class NOCListTableViewController: UITableViewController
 {
     // MARK: - Properties
@@ -24,9 +26,11 @@ class NOCListTableViewController: UITableViewController
         return 0
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Agents", for: indexPath)
         
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     

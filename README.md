@@ -33,7 +33,7 @@ After completing this assignment, you should...
 ## Required Features
 
 ### Storyboard Tasks
-* The table view cell prototype should display two labels. One on the left of the cell and one on the right. Look for a built in prototype that displays data this way.
+\\ * The table view cell prototype should display two labels. One on the left of the cell and one on the right. Look for a built in prototype that displays data this way.
 * The table view cell prototype should have a disclosure indicator
 * The table view cell prototype should have its reuse identifier set (hint: this should match the identifier set in `cellForRowAtIndexPath`)
 * The table view prototype cell should segue to the detail view. This should "show" the detail view.
