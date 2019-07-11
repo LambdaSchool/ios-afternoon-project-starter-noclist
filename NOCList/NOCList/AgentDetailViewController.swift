@@ -2,18 +2,33 @@
 //  AgentDetailViewController.swift
 //  NOCList
 //
-//  Created by Bobby Keffury on 7/10/19.
+//  Created by Bobby Keffury on 7/11/19.
 //  Copyright © 2019 Lambda School. All rights reserved.
 //
 
 import UIKit
 
 class AgentDetailViewController: UIViewController {
-
+    
+    
+    
+    var agent: (coverName: String, realName: String, accessLevel: Int, compromised: Bool)!
+    
+    @IBOutlet weak var agentCoverName: UILabel!
+    @IBOutlet weak var agentRealName: UILabel!
+    @IBOutlet weak var accessLevel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        title = agent.coverName
+        agentCoverName.text = agent.coverName
+        agentRealName.text = agent.realName
+        accessLevel.text = "\(agent.accessLevel)"
+        if agent.compromised == true {
+            view.backgroundColor = .red
+        }
     }
     
 
