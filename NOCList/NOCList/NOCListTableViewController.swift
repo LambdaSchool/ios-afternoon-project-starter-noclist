@@ -26,20 +26,34 @@ class NOCListTableViewController: UITableViewController
     }
     
     
-    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return agents.count
         
-        
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "\(compromisedCount()) agents compromised"
     }
     
     // MARK: - Table view data source
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AgentIdentifier", for: indexPath)
+        
+        let aAgent = agents[indexPath.row]
+        
+        cell.textLabel?.text = aAgent.coverName
+        cell.detailTextLabel?.text = aAgent.realName
+       
+        if aAgent.compromised == true {
+            cell.backgroundColor = UIColor(hue: 0, saturation: 0.4, brightness: 0.9, alpha: 1.0)
+        } else {
+            cell.backgroundColor = .white
+        }
+        
         
         return cell
     }
@@ -47,7 +61,10 @@ class NOCListTableViewController: UITableViewController
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        let selectedIndexPath = tableView.indexPathForSelectedRow!
+        let selectedAgent = agents[selectedIndexPath.row]
+        let agentDetailVC = segue.destination as! AgentDetailViewController
+        agentDetailVC.agent = selectedAgent
     }
     
     // MARK: - Private
@@ -70,5 +87,15 @@ class NOCListTableViewController: UITableViewController
         agents.append(contentsOf: [agent1, agent2, agent3, agent4, agent5, agent6, agent7, agent8, agent9, agent10, agent11])
         
     }
+    private func compromisedCount() -> Int {
+        var agentsCompromised = 0
+        for aAgent in agents {
+            if aAgent.compromised == true {
+            agentsCompromised += 1
+            }
+        }
+        return agentsCompromised
+    }
+    
     
 }
