@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List Table View Controller-->
+        <!--Top Secret-->
         <scene sceneID="gc1-sl-Yk3">
             <objects>
                 <tableViewController id="Pe5-xI-77t" customClass="NOCListTableViewController" customModule="NOCList" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,29 +26,37 @@
                                     <rect key="frame" x="0.0" y="0.0" width="376" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="agentCoverName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9A-HN-v0Q">
-                                            <rect key="frame" x="20" y="11" width="134" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="agentCoverName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUC-oQ-tsR">
+                                            <rect key="frame" x="20" y="11" width="129" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="129" id="g6D-Nt-Dgu"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="agentRealName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXB-DC-onr">
-                                            <rect key="frame" x="254" y="11" width="122" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="agentRealName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKk-TV-bs3">
+                                            <rect key="frame" x="209" y="11" width="122" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="122" id="dl6-v8-VnQ"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="B9A-HN-v0Q" firstAttribute="top" secondItem="iFF-qh-2kh" secondAttribute="topMargin" id="0gN-7k-CUd"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="HXB-DC-onr" secondAttribute="trailing" constant="-80" id="OEe-Cd-cQ6"/>
-                                        <constraint firstItem="B9A-HN-v0Q" firstAttribute="leading" secondItem="iFF-qh-2kh" secondAttribute="leadingMargin" id="VwL-lh-sh0"/>
-                                        <constraint firstItem="B9A-HN-v0Q" firstAttribute="baseline" secondItem="HXB-DC-onr" secondAttribute="baseline" id="XUq-Zk-nE9"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="VKk-TV-bs3" secondAttribute="trailing" constant="37" id="2UD-8F-ihg"/>
+                                        <constraint firstItem="hUC-oQ-tsR" firstAttribute="leading" secondItem="iFF-qh-2kh" secondAttribute="leadingMargin" id="Gcs-HQ-PLp"/>
+                                        <constraint firstItem="hUC-oQ-tsR" firstAttribute="top" secondItem="iFF-qh-2kh" secondAttribute="topMargin" id="Nzm-Tg-FSE"/>
+                                        <constraint firstItem="VKk-TV-bs3" firstAttribute="leading" secondItem="hUC-oQ-tsR" secondAttribute="trailing" constant="60" id="PBQ-HZ-UiL"/>
+                                        <constraint firstItem="hUC-oQ-tsR" firstAttribute="baseline" secondItem="VKk-TV-bs3" secondAttribute="baseline" id="uQP-31-Sgi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="VKk-TV-bs3" secondAttribute="trailing" constant="37" id="y2A-3a-3c0"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="agentCoverName" destination="B9A-HN-v0Q" id="Glh-YV-Hxt"/>
-                                    <outlet property="agentRealName" destination="HXB-DC-onr" id="QYF-fI-71h"/>
+                                    <outlet property="agentCoverName" destination="hUC-oQ-tsR" id="5uh-EV-6iW"/>
+                                    <outlet property="agentRealName" destination="VKk-TV-bs3" id="Pbd-tP-13G"/>
                                     <segue destination="RHP-Wc-icf" kind="show" id="hIf-3B-Mv0"/>
                                 </connections>
                             </tableViewCell>
@@ -59,11 +67,11 @@
                             <outlet property="delegate" destination="Pe5-xI-77t" id="5Mw-QP-TAB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="w0R-TK-RLY"/>
+                    <navigationItem key="navigationItem" title="Top Secret" id="w0R-TK-RLY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xE1-Ea-Wdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600" y="170.75892857142856"/>
+            <point key="canvasLocation" x="598.55072463768124" y="170.75892857142856"/>
         </scene>
         <!--Agent Detail View Controller-->
         <scene sceneID="6hj-mD-zN5">

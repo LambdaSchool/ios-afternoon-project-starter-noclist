@@ -48,6 +48,7 @@ class NOCListTableViewController: UITableViewController {
         cell.agentCoverName.text = anAgent.coverName
         cell.agentRealName.text = anAgent.realName
         
+        
         if anAgent.compromised == true {
             cell.backgroundColor = UIColor(hue: 0, saturation: 0.4, brightness: 0.9, alpha: 1.0)
         } else {

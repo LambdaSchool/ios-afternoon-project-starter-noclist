@@ -10,6 +10,7 @@ import UIKit
 
 class NOCListTableViewCell: UITableViewCell {
 
+    
     @IBOutlet weak var agentCoverName: UILabel!
     @IBOutlet weak var agentRealName: UILabel!
     
