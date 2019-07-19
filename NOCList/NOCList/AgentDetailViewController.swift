@@ -17,7 +17,14 @@ class AgentDetailViewController: UIViewController {
     
     
     override func viewDidLoad() {
-    
         super.viewDidLoad()
+        
+        coverNameLabel.text = agents.coverName
+        realNameLabel.text = agents.realName
+        levelLabel.text = agents.levelLabel
+        
+        if compromised == true {
+            view.backgroundColor = .red
+        }
     }
 }
