@@ -29,23 +29,22 @@ class NOCListTableViewController: UITableViewController
         return agents.count
     }
     
-    override func tableView(_ tableView: UITableView, titleForFooterSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return "\(compromisedCount()) agents compromised"
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AgentCell", for: indexPath)
         // Updating cell needs logic
         
-        let aAgentCell = agents[indexPath.row]
-        cell.textLabel?.text = aAgentCell.coverName
-        cell.detailTextLabel?.text = aAgentCell.realName
+        let agent = agents[indexPath.row]
+        cell.textLabel?.text = agent.coverName
+        cell.detailTextLabel?.text = agent.realName
         
-        if agents: compromised == true {
+        if agent.compromised == true {
             cell.backgroundColor = UIColor(hue: 0, saturation: 0.4, brightness: 0.9, alpha: 1.0)
-        }
-            else {
-                cell.backgroundColor = .white
-            }
+        } else {
+            cell.backgroundColor = .white
         }
         return cell
     }
@@ -53,7 +52,10 @@ class NOCListTableViewController: UITableViewController
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        let selectedIndexPath = tableView.indexPathForSelectedRow!
+        let selectedagent = agents[selectedIndexPath.row]
+        let agentDetailVC = segue.destination as! AgentDetailViewController
+        agentDetailVC.agent = selectedagent
     }
     
     // MARK: - Private
@@ -73,5 +75,10 @@ class NOCListTableViewController: UITableViewController
         
         agents.append(contentsOf: [ethan, jim, claire, eugene, franz, luther, sarah, max, hannah, jack, frank])
 
+    }
+
+    private func compromisedCount() {
+    
+        
     }
 }
