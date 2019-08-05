@@ -66,7 +66,7 @@ class NOCListTableViewController: UITableViewController {
         let eugeneKittridge = (coverName: "EugeneKittridge", realName: "Henry Czerny", accessLevel: 10, compromised: true)
         let franzkrieger = (coverName: "Franz Krieger", realName: "Jean Reno", accessLevel: 4, compromised: false)
         let lutherStickell = (coverName: "Luther Stickell", realName: "Ving Rhames", accessLevel: 4, compromised: false)
-        let sarahDavies = (coverName: "Sarah Davies", realName: "Kristin Scott Thomas", accessLvel: 5, compromised: true)
+        let sarahDavies = (coverName: "Sarah Davies", realName: "Kristin Scott Thomas", accessLevel: 5, compromised: true)
         let maxRotGrab = (coverName: "Max RotGrab", realName: "Vanessa Redgrave", accessLevel: 4, compromised: false)
         let hannahWilliams = (coverName: "Hannah Williams", realName: "Ingeborga Dapkunaite", accessLevel: 5, compromised: true)
         let jackHarmon = (coverName: "Jack Harmon", realName: "Emilio Estevez", accessLevel: 6, compromised: true)
