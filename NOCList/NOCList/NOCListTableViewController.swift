@@ -25,7 +25,7 @@ class NOCListTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-       return agents.count
+       return "\(compromisedCount()) agents compromised"
         
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,7 +51,10 @@ class NOCListTableViewController: UITableViewController {
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        let indexPath = tableView.indexPathForSelectedRow!
+        let agent = agents[indexPath.row]
+        let agentDetailVC = segue.destination as! AgentDetailViewController
+        agentDetailVC.agent = agent
     }
     
     // MARK: - Private
@@ -75,11 +78,12 @@ class NOCListTableViewController: UITableViewController {
     
     private func compromisedCount() -> String {
         var totalCount = 0
-        for _ in agents {
-            totalCount += agents.count
+        for person in agents {
+            if person.compromised {
+            totalCount += 1
+            }
         }
-        
-        return "\(compromisedCount()) agents compromised"
+        return "\(totalCount)"
     }
 
 }
