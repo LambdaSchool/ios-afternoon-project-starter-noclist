@@ -27,8 +27,10 @@ class AgentDetailViewController: UIViewController {
             view.backgroundColor = UIColor(hue: 0, saturation: 0.4, brightness: 0.9, alpha: 1.0)
         }
         coverNameLabel.text = agent.coverName
+        coverNameLabel.textColor = .blue
         realNameLabel.text = agent.realName
         accessLevelLabel.text = String(agent.accessLevel)
+        accessLevelLabel.textColor = .red
         
         
     }
