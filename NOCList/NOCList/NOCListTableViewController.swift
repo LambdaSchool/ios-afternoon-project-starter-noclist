@@ -51,6 +51,10 @@ class NOCListTableViewController: UITableViewController {
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = tableView.indexPathForSelectedRow!
+        let agent = agents[indexPath.row]
+        let agentDetailVC = segue.destination as! AgentDetailViewController
+        agentDetailVC.agent = agent
         
     }
     
