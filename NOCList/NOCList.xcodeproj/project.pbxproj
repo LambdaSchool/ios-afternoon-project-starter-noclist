@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EEE6EF522FCBAF300CE6EEC /* William.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE6EF422FCBAF300CE6EEC /* William.swift */; };
 		CE86AB7D22F880D700E7DF04 /* AgentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86AB7C22F880D700E7DF04 /* AgentDetailViewController.swift */; };
 		CEC31CC8229759CC007F6F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC31CC7229759CC007F6F4A /* AppDelegate.swift */; };
 		CEC31CCD229759CC007F6F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC31CCB229759CC007F6F4A /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9EEE6EF422FCBAF300CE6EEC /* William.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = William.swift; sourceTree = "<group>"; };
 		CE86AB7C22F880D700E7DF04 /* AgentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailViewController.swift; sourceTree = "<group>"; };
 		CEC31CC4229759CC007F6F4A /* NOCList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOCList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC31CC7229759CC007F6F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				CEC31CC7229759CC007F6F4A /* AppDelegate.swift */,
 				CEC31CD9229759FA007F6F4A /* NOCListTableViewController.swift */,
+				9EEE6EF422FCBAF300CE6EEC /* William.swift */,
 				CE86AB7C22F880D700E7DF04 /* AgentDetailViewController.swift */,
 				CEC31CCB229759CC007F6F4A /* Main.storyboard */,
 				CEC31CCE229759CC007F6F4A /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				CEC31CC8229759CC007F6F4A /* AppDelegate.swift in Sources */,
 				CE86AB7D22F880D700E7DF04 /* AgentDetailViewController.swift in Sources */,
 				CEC31CDA229759FA007F6F4A /* NOCListTableViewController.swift in Sources */,
+				9EEE6EF522FCBAF300CE6EEC /* William.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
